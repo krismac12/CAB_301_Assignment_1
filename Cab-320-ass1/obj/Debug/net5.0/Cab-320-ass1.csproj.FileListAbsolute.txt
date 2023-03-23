@@ -1,0 +1,16 @@
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\bin\Debug\net5.0\Cab-320-ass1.exe
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\bin\Debug\net5.0\Cab-320-ass1.deps.json
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\bin\Debug\net5.0\Cab-320-ass1.runtimeconfig.json
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\bin\Debug\net5.0\Cab-320-ass1.runtimeconfig.dev.json
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\bin\Debug\net5.0\Cab-320-ass1.dll
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\bin\Debug\net5.0\ref\Cab-320-ass1.dll
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\bin\Debug\net5.0\Cab-320-ass1.pdb
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\obj\Debug\net5.0\Cab-320-ass1.csproj.AssemblyReference.cache
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\obj\Debug\net5.0\Cab-320-ass1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\obj\Debug\net5.0\Cab-320-ass1.AssemblyInfoInputs.cache
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\obj\Debug\net5.0\Cab-320-ass1.AssemblyInfo.cs
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\obj\Debug\net5.0\Cab-320-ass1.csproj.CoreCompileInputs.cache
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\obj\Debug\net5.0\Cab-320-ass1.dll
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\obj\Debug\net5.0\ref\Cab-320-ass1.dll
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\obj\Debug\net5.0\Cab-320-ass1.pdb
+C:\Users\krist\source\repos\Cab-320-ass1\Cab-320-ass1\obj\Debug\net5.0\Cab-320-ass1.genruntimeconfig.cache
