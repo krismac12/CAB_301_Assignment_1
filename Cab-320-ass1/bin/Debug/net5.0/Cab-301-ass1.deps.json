@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Cab-301-ass1/1.0.0": {
+        "runtime": {
+          "Cab-301-ass1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cab-301-ass1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

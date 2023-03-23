@@ -1,0 +1,16 @@
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\bin\Debug\net5.0\Cab-301-ass1.exe
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\bin\Debug\net5.0\Cab-301-ass1.deps.json
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\bin\Debug\net5.0\Cab-301-ass1.runtimeconfig.json
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\bin\Debug\net5.0\Cab-301-ass1.runtimeconfig.dev.json
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\bin\Debug\net5.0\Cab-301-ass1.dll
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\bin\Debug\net5.0\ref\Cab-301-ass1.dll
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\bin\Debug\net5.0\Cab-301-ass1.pdb
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\obj\Debug\net5.0\Cab-301-ass1.csproj.AssemblyReference.cache
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\obj\Debug\net5.0\Cab-301-ass1.GeneratedMSBuildEditorConfig.editorconfig
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\obj\Debug\net5.0\Cab-301-ass1.AssemblyInfoInputs.cache
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\obj\Debug\net5.0\Cab-301-ass1.AssemblyInfo.cs
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\obj\Debug\net5.0\Cab-301-ass1.csproj.CoreCompileInputs.cache
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\obj\Debug\net5.0\Cab-301-ass1.dll
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\obj\Debug\net5.0\ref\Cab-301-ass1.dll
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\obj\Debug\net5.0\Cab-301-ass1.pdb
+C:\desk\code\Cab301\Assignement 1\CAB_301_Assignement_1\Cab-320-ass1\obj\Debug\net5.0\Cab-301-ass1.genruntimeconfig.cache

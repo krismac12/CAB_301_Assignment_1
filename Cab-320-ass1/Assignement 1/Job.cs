@@ -59,24 +59,46 @@ public class Job : IJob {
 
 	public static bool IsValidId( uint id ) {
 
-		//To be implemented by students
-		return true;
+		if(id >= 1 && id <= 999)
+        {
+			return true;
+
+		}
+        else
+        {
+			return false;
+        }
 
 
 	}
 
 	public static bool IsValidExecutionTime( uint executiontime ) {
 
-		//To be implemented by students
-		return true;
+		if( executiontime > 0)
+        {
+			return true;
+
+		}
+        else
+        {
+			return false;
+        }
 
 
 	}
 
 	public static bool IsValidPriority( uint priority ) {
 
-		//To be implemented by students
-		return true;
+
+		if (priority >= 1 && priority <= 9)
+		{
+			return true;
+
+		}
+		else
+		{
+			return false;
+		}
 
 
 	}
