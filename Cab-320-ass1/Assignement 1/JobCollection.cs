@@ -43,6 +43,7 @@ public class JobCollection : IJobCollection {
             if(jobs[i].Id == id)
             {
                 contains = true;
+                return contains;
             }
         }
         return contains;
@@ -51,19 +52,50 @@ public class JobCollection : IJobCollection {
     }
 
     public IJob? Find( uint id ) {
-        //To be implemented by students
-        return jobs[count-1];
-
+        for(int i = 0; i < count; i++)
+        {
+            if(jobs[i].Id == id)
+            {
+                return jobs[i];
+            }
+        }
+        return null;
     }
 
     public bool Remove(uint id) {
-        //To be implemented by students
+        IJob[] tempJobs = new IJob[Capacity];
+        int index = -1;
+        for (int i = 0; i < count; i++)
+        {
+            tempJobs[i] = jobs[i];
+            if(jobs[i].Id == id)
+            {
+                index = i;
+            }
+        }
+
+        if(index != -1)
+        {
+            for (int x = (int)(count - 1); x > index; x--)
+            {
+                tempJobs[x - 1] = jobs[x];
+            }
+            jobs = tempJobs;
+            jobs[(int)(count - 1)] = null;
+            count--;
+            return true;
+        }
         return false;
 
     }
 
     public IJob[] ToArray() {
-        //To be implemented by students
-        return jobs;
+        IJob[] tempJobs = new IJob[count];
+        for (int i = 0; i < count; i++)
+        {
+            tempJobs[i] = jobs[i];
+
+        }
+        return tempJobs;
     }
 }
