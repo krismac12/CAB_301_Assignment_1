@@ -3,8 +3,8 @@ using System.Diagnostics;
 
 
 public class JobCollection : IJobCollection {
-	public IJob[] jobs;
-	public uint count;
+	private IJob[] jobs;
+	private uint count;
 
 	public JobCollection( uint capacity ) {
 		if( !( capacity >= 1 ) ) throw new ArgumentException();
