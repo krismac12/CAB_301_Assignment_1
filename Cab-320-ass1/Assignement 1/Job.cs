@@ -104,11 +104,18 @@ public class Job : IJob {
 	}
 
 	public static bool IsTimeReceived(uint time) {
+		
+		if (time > 0)
+		{
+			return true;
 
-		//To be implemented by students
-		return true;
+		}
+		else
+		{
+			return false;
+		}
 
-    }
+	}
 
     public override string ToString() {
 		return $"Job(jobId: {id}, timeReceived: {timeReceived}, executionTime: {executionTime}, priority: {priority})";
