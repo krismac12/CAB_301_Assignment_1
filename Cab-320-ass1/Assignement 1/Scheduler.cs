@@ -6,6 +6,7 @@ public class Scheduler : IScheduler {
 	}
 
 	public IJobCollection Jobs { get; }
+    public int iterations = 0;
 
 	public IJob[] FirstComeFirstServed() 
     {
@@ -19,6 +20,7 @@ public class Scheduler : IScheduler {
             {
                 jobsA[j + 1] = jobsA[j];
                 j = j - 1;
+                iterations++;
             }
             jobsA[j + 1] = job;
         }
