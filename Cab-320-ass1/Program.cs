@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Cab_320_ass1
 {
@@ -6,29 +7,12 @@ namespace Cab_320_ass1
     {
         static void Main(string[] args)
         {
-
-            JobCollection collection = generateRandom(10);
-
-            /*foreach(Job job in collection.jobs)
-            {
-                System.Console.WriteLine(job.Id);
-            }*/
-
-            for (int i = 0; i < collection.count; i++)
-            {
-                System.Console.WriteLine(collection.jobs[i]);
-            }
-
-            Scheduler scheduler = new Scheduler(collection);
-
-            IJob[] jobs = scheduler.FirstComeFirstServed();
-
-            System.Console.WriteLine("Sorted\n");
-
-            for (int i = 0; i < collection.count; i++)
-            {
-                System.Console.WriteLine(jobs[i]);
-            }
+            long time1 = TestTime(1);
+            long time2 = TestTime(2);
+            long time3 = TestTime(10);
+            System.Console.WriteLine(time1);
+            System.Console.WriteLine(time2);
+            System.Console.WriteLine(time3);
 
         }
 
@@ -38,9 +22,24 @@ namespace Cab_320_ass1
             Random random = new Random();
             for (int i = 1; i <= count; i++)
             {
-                collection.Add(new Job((uint)i, random.Next(1, 100), 1, 1));
+                collection.Add(new Job((uint)i, random.Next(1, 100), (uint)random.Next(1,100), (uint)random.Next(1,9)));
             }
             return collection;
+        }
+
+        public static long TestTime(int n)
+        {
+            JobCollection jobs = generateRandom(n);
+            
+            Scheduler scheduler = new Scheduler(jobs);
+
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+            IJob[] sortedJobs = scheduler.FirstComeFirstServed();
+            stopwatch.Stop();
+
+            long time = stopwatch.ElapsedTicks;
+            return time;
         }
     }
 }
