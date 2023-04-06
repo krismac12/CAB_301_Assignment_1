@@ -29,8 +29,28 @@ namespace Cab_320_ass1
             System.Console.WriteLine(time10);
 
 
+            /*System.Console.WriteLine("\n Unsorted \n");
 
+            JobCollection ran = generateRandom(10);
 
+            IJob[] jobs = ran.ToArray();
+
+            foreach (IJob job in jobs)
+            {
+                Console.WriteLine(job);
+            }
+
+            Scheduler scheduler = new Scheduler(ran);
+
+            IJob[] job_sorted = scheduler.Priority();
+
+            System.Console.WriteLine("\n Sorted \n");
+
+            foreach (IJob job in job_sorted)
+            {
+                Console.WriteLine(job);
+            }
+            */
 
         }
 
@@ -65,7 +85,7 @@ namespace Cab_320_ass1
             JobCollection jobs = generateRandom(n);
 
             Scheduler scheduler = new Scheduler(jobs);
-            IJob[] sortedJobs = scheduler.ShortestJobFirst();
+            IJob[] sortedJobs = scheduler.Priority();
 
             return scheduler.operations;
 
