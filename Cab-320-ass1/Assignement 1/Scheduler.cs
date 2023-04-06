@@ -84,11 +84,13 @@ public class Scheduler : IScheduler {
             {
                 c.Add(right[0]);
                 right_jobs.Remove(right[0].Id);
+                operations++;
             }
             else
             {
                 c.Add(left[0]);
                 left_jobs.Remove(left[0].Id);
+                operations++;
             }
             left = left_jobs.ToArray();
             right = right_jobs.ToArray();
@@ -99,6 +101,7 @@ public class Scheduler : IScheduler {
             c.Add(left[0]);
             left_jobs.Remove(left[0].Id);
             left = left_jobs.ToArray();
+            operations++;
         }
 
         while (right_jobs.Count > 0)
@@ -106,6 +109,7 @@ public class Scheduler : IScheduler {
             c.Add(right[0]);
             right_jobs.Remove(right[0].Id);
             right = right_jobs.ToArray();
+            operations++;
         }
         return c;
     }
