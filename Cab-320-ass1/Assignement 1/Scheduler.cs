@@ -66,63 +66,63 @@ public class Scheduler : IScheduler {
             return collection;
         }
 
-        IJobCollection left_jobs = new JobCollection(collection.Count);
-        IJobCollection right_jobs = new JobCollection(collection.Count);
+        IJobCollection leftJobs = new JobCollection(collection.Count);
+        IJobCollection rightJobs = new JobCollection(collection.Count);
 
 
         for (int i = 0; i < n / 2; i++)
         {
-            left_jobs.Add(jobs[i]);
+            leftJobs.Add(jobs[i]);
         }
         for(int i = n/2;i < n; i++)
         {
-            right_jobs.Add(jobs[i]);
+            rightJobs.Add(jobs[i]);
         }
 
-        left_jobs = MergeSort(left_jobs);
-        right_jobs = MergeSort(right_jobs);
+        leftJobs = MergeSort(leftJobs);
+        rightJobs = MergeSort(rightJobs);
 
-        return Merge(left_jobs, right_jobs, collection);
+        return Merge(leftJobs, rightJobs, collection);
 
     }
 
-    private IJobCollection Merge(IJobCollection left_jobs, IJobCollection right_jobs, IJobCollection original)
+    private IJobCollection Merge(IJobCollection leftJobs, IJobCollection rightJobs, IJobCollection original)
     {
         JobCollection c = new JobCollection(original.Count);
 
-        IJob[] left = left_jobs.ToArray();
-        IJob[] right = right_jobs.ToArray();
-        while (left_jobs.Count > 0 && right_jobs.Count > 0)
+        IJob[] left = leftJobs.ToArray();
+        IJob[] right = rightJobs.ToArray();
+        while (leftJobs.Count > 0 && rightJobs.Count > 0)
         {
             if(left[0].ExecutionTime > right[0].ExecutionTime)
             {
                 c.Add(right[0]);
-                right_jobs.Remove(right[0].Id);
+                rightJobs.Remove(right[0].Id);
                 operations++;
             }
             else
             {
                 c.Add(left[0]);
-                left_jobs.Remove(left[0].Id);
+                leftJobs.Remove(left[0].Id);
                 operations++;
             }
-            left = left_jobs.ToArray();
-            right = right_jobs.ToArray();
+            left = leftJobs.ToArray();
+            right = rightJobs.ToArray();
         }
 
-        while (left_jobs.Count > 0)
+        while (leftJobs.Count > 0)
         {
             c.Add(left[0]);
-            left_jobs.Remove(left[0].Id);
-            left = left_jobs.ToArray();
+            leftJobs.Remove(left[0].Id);
+            left = leftJobs.ToArray();
             operations++;
         }
 
-        while (right_jobs.Count > 0)
+        while (rightJobs.Count > 0)
         {
             c.Add(right[0]);
-            right_jobs.Remove(right[0].Id);
-            right = right_jobs.ToArray();
+            rightJobs.Remove(right[0].Id);
+            right = rightJobs.ToArray();
             operations++;
         }
         return c;

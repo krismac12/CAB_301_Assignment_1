@@ -7,6 +7,7 @@ namespace Cab_320_ass1
     {
         static void Main(string[] args)
         {
+            /*
             int time1 = TestIterations(100);
             int time2 = TestIterations(200);
             int time3 = TestIterations(300);
@@ -27,9 +28,10 @@ namespace Cab_320_ass1
             System.Console.WriteLine(time8);
             System.Console.WriteLine(time9);
             System.Console.WriteLine(time10);
+            */
 
-
-            /*System.Console.WriteLine("\n Unsorted \n");
+            /*
+            System.Console.WriteLine("\n Unsorted \n");
 
             JobCollection ran = generateRandom(10);
 
@@ -42,15 +44,27 @@ namespace Cab_320_ass1
 
             Scheduler scheduler = new Scheduler(ran);
 
-            IJob[] job_sorted = scheduler.Priority();
+            IJob[] job_sorted = scheduler.ShortestJobFirst();
 
             System.Console.WriteLine("\n Sorted \n");
 
             foreach (IJob job in job_sorted)
             {
                 Console.WriteLine(job);
-            }
-            */
+            }*/
+
+            bool bool1 = Job.IsValidExecutionTime(1);
+            bool bool2 = Job.IsValidExecutionTime(999);
+            bool bool3 = Job.IsValidExecutionTime(0);
+            bool bool4 = Job.IsValidExecutionTime(9999);
+
+
+
+            System.Console.WriteLine("\n bool1 :"+bool1+" \n");
+            System.Console.WriteLine("\n bool2 :" + bool2 + " \n");
+            System.Console.WriteLine("\n bool3 :" + bool3 + " \n");
+            System.Console.WriteLine("\n bool4 :" + bool4 + " \n");
+
 
         }
 
